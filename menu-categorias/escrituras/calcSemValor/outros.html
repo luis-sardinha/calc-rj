@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora BRL</title>
+  <link rel="stylesheet" href="styleindex2.css">
+
+</head>
+<body>
+
+  <div class="container">
+    <h2>Calculadora de Emolumentos</h2>
+    <h5>(Outros)</h5>
+        
+    <form id="calcForm">
+      <label for="value1">Valor da Escritura:</label>
+      <input type="text" id="value1" name="value1" oninput="formatCurrency(this)" required>
+
+      <!-- <label for="value2">Valor da Avaliação (ITBI):</label>
+      <input type="text" id="value2" name="value2" oninput="formatCurrency(this)" required>
+
+      <label for="value3">Valor do Financiamento:</label>
+      <input type="text" id="value3" name="value3" oninput="formatCurrency(this)" required>
+
+      <button type="button" onclick="calculate()">Calcular</button>
+      <label for="select">Deseja adicionar alguma averbação?</label>
+              <select id="selectOption"><br>
+                  <option value="0"></option>
+                  <option value="0">Não desejo adicionar averbações</option>
+                  <option value="1">1 Averbação</option>
+                  <option value="2">2 Averbações</option>
+                  <option value="3">3 Averbações</option>
+              </select><br> -->
+    </form>
+
+    <div id="result-container">
+      
+      <p id="result"></p>
+      <button type="button" class="back" value="Voltar" onClick="history.go(-1)">Voltar</button>
+      <button id="imprimirButton" onclick="imprimirResultado()" style="display: none;">Imprimir Resultado</button>
+    
+    </div>
+
+    <script src="nova_alienacao.js"></script>
+  </div>
+
+</body>
+</html>

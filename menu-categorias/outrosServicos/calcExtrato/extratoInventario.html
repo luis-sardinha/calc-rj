@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora BRL</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+
+</head>
+<body>
+  <div class="container">
+    <h2>Calculadora de Emolumentos</h2>
+    <h5>(Homologação pela escritura de formalização de penhor legal)</h5>
+            
+      <label for="numeroFolhas">Número de Folhas:</label>
+      <input type="number" id="numeroFolhas" class="input-folhas" min="1">
+      
+      <!-- Botão "Calcular" abaixo da entrada de número de folhas -->
+      <div class="button-container">
+        <button type="button" onclick="calculate()">Calcular</button>
+      </div>
+    </form>
+
+    <div id="result-container">
+      <p id="result"></p>
+      <button type="button" class="back" onClick="history.go(-1)">Voltar</button>
+      <button id="imprimirButton" onclick="imprimirResultado()" style="display: none;">Imprimir Resultado</button>
+      <button id="exportarExcelButton" onclick="exportarParaExcel()" style="display: none;">Exportar para Excel</button>
+    </div>
+
+    <script src="extratoInventario.js"></script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora BRL</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+
+</head>
+<body>
+
+  <div class="container">
+    <h2>Calculadora de Emolumentos</h2>
+    <h5>(Reconhecimento de Paternidade)</h5>
+        
+    <form id="calcForm">
+      <label for="value1">Valor da Procuração:</label>
+      
+    </form>
+
+    <div id="result-container">
+      
+      <p id="result"></p>
+      <button type="button" class="back" value="Voltar" onClick="history.go(-1)">Voltar</button>
+      <button id="imprimirButton" onclick="imprimirResultado()" style="display: none;">Imprimir Resultado</button>
+      <button id="exportarExcelButton" onclick="exportarParaExcel()" style="display: none;">Exportar para Excel</button>
+
+    
+    </div>
+
+    <script src="finsPrevi.js"></script>
+  </div>
+
+</body>
+</html>

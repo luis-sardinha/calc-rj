@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #19222e;
+}
+
+h5 {
+    margin-top: 0;
+    color: #19222e;
+}
+
+form {
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards 0.3s;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #19222e;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-container label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #19222e;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+    background-color: #e35724;
+    border-color: #e35724;
+}
+
+.checkbox-container input[type="checkbox"]:checked::before {
+    content: "\2713";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.checkbox-container span {
+    padding: 8px;
+    background-color: #e35724;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.checkbox-container input[type="checkbox"]:hover,
+.checkbox-container input[type="checkbox"]:focus {
+    border-color: #e35724;
+}
+
+.checkbox-container input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(25, 34, 46, 0.3);
+}
+
+.select-container {
+    position: relative;
+    display: inline-block;
+    width: calc(70% - 16px);
+    margin-bottom: 10px;
+}
+
+.select-container select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    color: #19222e;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.select-container select:hover {
+    border-color: #19222e;
+}
+
+.select-container select:focus {
+    outline: none;
+    border-color: #19222e;
+    box-shadow: 0 0 5px rgba(25, 34, 46, 0.3);
+}
+
+.select-container select:active,
+.select-container select:focus {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6"><path fill="%23c4921c" d="M6 5.25L0 0l1.5-1.5L6 2.25 10.5-1.5 12 0z"/></svg>');
+}
+
+.select-container select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(25, 34, 46, 0.3);
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+input:hover {
+    border-color: #19222e;
+}
+
+button {
+    background-color: #e35724;
+    color: #19222e;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e35724;
+    color: #ffffff;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e35724;
+    color: #19222e;
+    border-radius: 4px;
+    display: none;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards 0.5s;
+    max-width: 600px; /* Defina a largura máxima do contêiner do resultado */
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+#result.show {
+    display: block;
+}
+
+#result:hover {
+    background-color: #e35724;
+    transition: background-color 0.3s ease;
+}
+
+.excel-style {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.excel-style td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.excel-style tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.excel-style tr:hover {
+    background-color: #ddd;
+}
+

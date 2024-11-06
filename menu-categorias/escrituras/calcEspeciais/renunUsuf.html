@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora BRL</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div class="container">
+    <h2>Calculadora de Emolumentos</h2>
+    <h5>(Renuncia e Usufruto)</h5>
+        
+    <form id="calcForm">
+      <label for="value1">Valor do Imóvel:</label>
+      <input type="text" id="value1" name="value1" oninput="formatCurrency(this)" required>
+
+      
+    <br><button type="button" onclick="calculate()">Calcular</button></form><br>
+    </form>
+
+    <div id="result-container">
+      
+      <p id="result"></p>
+      <button type="button" class="back" value="Voltar" onClick="history.go(-1)">Voltar</button>
+      <button id="imprimirButton" onclick="imprimirResultado()" style="display: none;">Imprimir Resultado</button>
+    
+    </div>
+
+    <!-- <script src="nova_alienacao.js"></script> -->
+    <script src="renunUsuf.js"></script>
+  </div>
+
+</body>
+</html>

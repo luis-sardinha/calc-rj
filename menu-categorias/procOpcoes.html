@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styleindex2.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <img src="../images/Logo_Principal.png" alt="Logo" class="logo">
+        <h1>Calculadora de emolumentos</h1>
+        <h4>Selecione o serviço desejado:</h4>
+        <div class="button-group">
+            
+            <button onclick="window.location.href = 'procuracoes/procGerais.html';">Procurações Gerais</button>
+            <button onclick="window.location.href = 'procuracoes/procEspeciais.html';">Procurações Especiais</button>
+            
+        </div>
+        <div id="content">
+            <!-- O conteúdo da página carregada será exibido aqui -->
+        </div>
+        <div>
+            <button onclick="history.back()">Voltar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
