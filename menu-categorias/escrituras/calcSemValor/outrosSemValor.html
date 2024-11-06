@@ -4,24 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora BRL</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleindex2.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
 
 </head>
 <body>
 
   <div class="container">
     <h2>Calculadora de Emolumentos</h2>
-    <h5>(Convenção de condomínio)</h5>
+    <h5>(Escritura sem valor declarado)</h5>
         
-    <form id="calcForm">
-      <label for="inputOption">Caso exceda 3 unidades, digitar o número de unidades excedentes:</label>
-      <input type="number" id="inputOption" placeholder="Ex: 1, 2, 3..." onkeydown="detectEnter(event)" /><br>
-      <button type="button" onclick="calculate()">Calcular</button>
-    </form><br>
-
-
+  
     <div id="result-container">
       
       <p id="result"></p>
@@ -32,7 +27,7 @@
     
     </div>
 
-    <script src="convenCond.js"></script>
+    <script src="outrosSemValor.js"></script>
   </div>
 
 </body>

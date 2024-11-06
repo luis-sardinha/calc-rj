@@ -36,7 +36,8 @@ function formatarValorEmReais(valor) {
 
   var distribuicao = 38.15
 
-  var iss = 5.00
+  var iss = valorSemAdd * 0.05;
+  iss = Math.floor(fetj * 100) / 100; // Trunca para 2 casas decimais
 
   var selo = 2.59
 

@@ -36,7 +36,10 @@ function calculate() {
   pmcmv = Math.floor(pmcmv * 100) / 100;
 
   var distribuicao = 38.15;
-  var iss = 5.0;
+  
+  var iss = valorSemAdd * 0.05;
+  iss = Math.floor(fetj * 100) / 100; // Trunca para 2 casas decimais
+  
   var selo = 2.59;
   var atoeletronico = 1.29;
 

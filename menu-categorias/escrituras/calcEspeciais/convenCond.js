@@ -23,7 +23,7 @@ function calculate() {
         inputOption = parseInt(inputOption); // Converte para número se houver um valor
     }
 
-    var valorUnd = 23.15
+    var valorUnd = 22.7
     var multiplier = parseInt(inputOption) * valorUnd;
 
     var valorSemAdd = 998.06
@@ -35,7 +35,10 @@ function calculate() {
     var pmcmv = Math.floor(valorTotalEmolumentos * 0.02 * 100) / 100;
 
     var distribuicao = 38.15;
-    var iss = 5.00;
+
+    var iss = valorTotalEmolumentos * 0.05;
+    iss = Math.floor(fetj * 100) / 100; // Trunca para 2 casas decimais
+
     var selo = 2.59;
     var atoeletronico = 1.29;
 

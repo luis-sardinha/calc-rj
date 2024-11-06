@@ -70,8 +70,8 @@ function calculate() {
   // Encontrar o valor correspondente na tabela
   var valorTabela = encontrarValorNaTabela(inputValue, tabelaValores);
   
-  // Divide o valor por 3
-  valorTabela = valorTabela / 3;
+  // Divide o valor por 6
+  valorTabela = valorTabela / 6;
 
   // Verifica se o valor é menor que 139,03 e ajusta se necessário
   valorTabela = valorTabela < 139.03 ? 139.03 : valorTabela;
@@ -91,7 +91,8 @@ function calculate() {
 
   var distribuicao = 38.15
 
-  var iss = 5.00
+  var iss = valorTabela * 0.05;
+  iss = Math.floor(fetj * 100) / 100; // Trunca para 2 casas decimais
 
   var selo = 2.59
 
