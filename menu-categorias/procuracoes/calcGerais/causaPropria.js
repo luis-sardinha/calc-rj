@@ -87,7 +87,7 @@ function formatCurrency(input) {
     var distribuicao = 38.15
   
     var iss = valorTabela * 0.05;
-    iss = Math.floor(fetj * 100) / 100; // Trunca para 2 casas decimais
+    iss = Math.floor(iss * 100) / 100; // Trunca para 2 casas decimais
   
     var selo = 2.59
   
