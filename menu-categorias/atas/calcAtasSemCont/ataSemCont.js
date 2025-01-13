@@ -24,10 +24,10 @@ function formatarValorEmReais(valor) {
         inputOption = parseInt(inputOption); // Converte para número se houver um valor
     }
     
-    var undComPmcmv = 152.77;
+    var undComPmcmv = 159.95;
     var multiplier = parseInt(inputOption) * undComPmcmv;
   
-    var valorSemAdd = 305.29
+    var valorSemAdd = 319.65
     var valorTotalEmolumentos = valorSemAdd + multiplier;
 
     var fetj = Math.floor(valorTotalEmolumentos * 0.2 * 100) / 100;
@@ -38,7 +38,7 @@ function formatarValorEmReais(valor) {
     var distribuicao = 38.15;
     var iss = valorSemAdd * 0.05;
     iss = Math.floor(iss * 100) / 100; // Trunca para 2 casas decimais
-    var selo = 2.59;
+    var selo = 2.77;
     var atoeletronico = 1.29;
 
     var emolumentos = valorTotalEmolumentos + fetj + funperj + funarpen + pmcmv + distribuicao + iss + selo + atoeletronico;

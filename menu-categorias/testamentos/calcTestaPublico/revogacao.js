@@ -20,7 +20,7 @@ function formatarValorEmReais(valor) {
   
   function calculate() {
   
-  var valorSemAdd = 547.17
+  var valorSemAdd = 572.91
   
   var fetj = valorSemAdd * 0.2;
   fetj = Math.floor(fetj * 100) / 100; // Trunca para 2 casas decimais
@@ -39,7 +39,7 @@ function formatarValorEmReais(valor) {
   var iss = valorSemAdd * 0.05;
   iss = Math.floor(iss * 100) / 100; // Trunca para 2 casas decimais
 
-  var selo = 2.59
+  var selo = 2.77
 
   var atoeletronico = 1.29
 

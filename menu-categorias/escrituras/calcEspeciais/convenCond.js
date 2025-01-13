@@ -23,10 +23,10 @@ function calculate() {
         inputOption = parseInt(inputOption); // Converte para número se houver um valor
     }
 
-    var valorUnd = 22.7
+    var valorUnd = 23.76
     var multiplier = parseInt(inputOption) * valorUnd;
 
-    var valorSemAdd = 998.06
+    var valorSemAdd = 1045.02
     var valorTotalEmolumentos = valorSemAdd + multiplier;
 
     var fetj = Math.floor(valorTotalEmolumentos * 0.2 * 100) / 100;
@@ -39,7 +39,7 @@ function calculate() {
     var iss = valorTotalEmolumentos * 0.05;
     iss = Math.floor(iss * 100) / 100; // Trunca para 2 casas decimais
 
-    var selo = 2.59;
+    var selo = 2.71;
     var atoeletronico = 1.29;
 
     var emolumentos = valorTotalEmolumentos + fetj + funperj + funarpen + pmcmv + distribuicao + iss + selo + atoeletronico;
