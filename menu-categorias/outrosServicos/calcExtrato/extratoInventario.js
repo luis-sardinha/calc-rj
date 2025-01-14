@@ -35,13 +35,13 @@ function calculate() {
   var pmcmv = valorSemAdd * 0.02;
   pmcmv = Math.floor(pmcmv * 100) / 100;
 
-  var distribuicao = 38.15;
+  var distribuicao = 39.93;
   
   var iss = valorSemAdd * 0.05;
   iss = Math.floor(iss * 100) / 100; // Trunca para 2 casas decimais
   
   var selo = 2.77;
-  var atoeletronico = 1.29;
+  var atoeletronico = 1.35;
 
   var emolumentos = valorSemAdd + fetj + funperj + funperj + funarpen + pmcmv + distribuicao + iss + selo + atoeletronico;
 

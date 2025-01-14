@@ -34,13 +34,13 @@ function calculate() {
     var funarpen = Math.floor(valorTotalEmolumentos * 0.06 * 100) / 100;
     var pmcmv = Math.floor(valorTotalEmolumentos * 0.02 * 100) / 100;
 
-    var distribuicao = 38.15;
+    var distribuicao = 39.93;
 
     var iss = valorTotalEmolumentos * 0.05;
     iss = Math.floor(iss * 100) / 100; // Trunca para 2 casas decimais
 
     var selo = 2.71;
-    var atoeletronico = 1.29;
+    var atoeletronico = 1.35;
 
     var emolumentos = valorTotalEmolumentos + fetj + funperj + funarpen + pmcmv + distribuicao + iss + selo + atoeletronico;
 
