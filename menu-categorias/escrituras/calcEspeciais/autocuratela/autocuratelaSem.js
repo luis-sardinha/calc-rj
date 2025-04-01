@@ -20,7 +20,7 @@ window.onload = function(){
 
 function calculate() {
   
-  var valorSemAdd = 443.58
+  var valorSemAdd = 491.59
  
   var fetj = valorSemAdd * 0.2;
   fetj = Math.floor(fetj * 100) / 100; // Trunca para 2 casas decimais
@@ -34,12 +34,12 @@ function calculate() {
   var pmcmv = valorSemAdd * 0.02;
   pmcmv = Math.floor(pmcmv * 100) / 100; // Trunca para 2 casas decimais
 
-  var distribuicao = 39.93
+  var distribuicao = 42.28
 
   var iss = valorSemAdd * 0.05;
   iss = Math.floor(iss * 100) / 100; // Trunca para 2 casas decimais
 
-  var selo = 2.59
+  var selo = 2.87
 
   var atoeletronico = 1.35
 

@@ -17,7 +17,7 @@ function showResult() {
 }
 
 function calculate() {
-  var valorSemAdd = 28.55;
+  var valorSemAdd = 30.22;
 
   // Obtém o número de folhas do campo de entrada
   var numeroFolhas = document.getElementById("numeroFolhas").value || 1;
@@ -35,12 +35,12 @@ function calculate() {
   var pmcmv = valorSemAdd * 0.02;
   pmcmv = Math.floor(pmcmv * 100) / 100;
 
-  var distribuicao = 39.93;
+  var distribuicao = 42.28;
   
   var iss = valorSemAdd * 0.05;
   iss = Math.floor(iss * 100) / 100; // Trunca para 2 casas decimais
   
-  var selo = 2.77;
+  var selo = 2.87;
   var atoeletronico = 1.35;
 
   var emolumentos = valorSemAdd + fetj + funperj + funperj + funarpen + pmcmv + distribuicao + iss + selo + atoeletronico;

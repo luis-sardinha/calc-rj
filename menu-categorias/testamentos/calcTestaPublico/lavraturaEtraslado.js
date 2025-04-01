@@ -34,21 +34,21 @@ function formatCurrency(input) {
   
     // Tabela de Emolumentos
     var tabelaValores = [
-      { intervalo: [0, 17417.06], valor: 274.44 },
-      { intervalo: [17417.07, 34834,16], valor: 453.50 },
-      { intervalo: [34837.17, 52251.24], valor: 632.58 },
-      { intervalo: [52251.25, 69668.33], valor: 775.80 },
-      { intervalo: [69668.34, 92891.09], valor: 1375.09 },
-      { intervalo: [92891.10, 116113.88], valor: 1623.38 },
-      { intervalo: [116113.89, 232227.77], valor: 2196.34 },
-      { intervalo: [232227.78, 464455.57], valor: 2356.73 },
+      { intervalo: [0, 18435.10], valor: 290.48 },
+      { intervalo: [18435.11, 36870.23], valor: 480.00 },
+      { intervalo: [36870.24, 55305.35], valor: 669.56 },
+      { intervalo: [55305.36, 73740.49], valor: 821.15 },
+      { intervalo: [73740.50, 98320.64], valor: 1455.47 },
+      { intervalo: [98320.65, 122900.81], valor: 1718.27 },
+      { intervalo: [122900.82, 245801.64], valor: 2324.72 },
+      { intervalo: [245801.65, 491603.30], valor: 2494.48 }
   ];
-
+  
     // Configurações para os intervalos adicionais
-    const intervaloInicial = 464455.58;
-    const valorInicial = 2356.73;
-    const tamanhoFaixa = 116113.88;
-    const incrementoValor = 208.73;
+    const intervaloInicial = 491603.31;
+    const valorInicial = 2494.48;
+    const tamanhoFaixa = 122900.81;
+    const incrementoValor = 220.93;
     const limiteSuperior = 40000000; // 40 milhões
  
   
@@ -84,12 +84,12 @@ function formatCurrency(input) {
     var pmcmv = valorTabela * 0.02;
     pmcmv = Math.floor(pmcmv * 100) / 100; // Trunca para 2 casas decimais
   
-    var distribuicao = 39.93
+    var distribuicao = 42.28
   
     var iss = valorTabela * 0.05;
     iss = Math.floor(iss * 100) / 100; // Trunca para 2 casas decimais
   
-    var selo = 2.77
+    var selo = 2.87
   
     var atoeletronico = 1.35
   

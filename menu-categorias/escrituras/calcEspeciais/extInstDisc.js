@@ -26,10 +26,10 @@ function calculate() {
   }
   
   // Definir os valores e o cálculo do multiplicador
-  var undSemAdd = 132.05;
+  var undSemAdd = 139.77;
   var multiplier = parseInt(inputOption) * undSemAdd; // Converte o valor para número e calcula o multiplicador
   
-  var valorSemAdd = 1916.51;
+  var valorSemAdd = 2028.53;
   var valorTotalEmolumentos = valorSemAdd + multiplier;
 
   // Cálculos adicionais
@@ -38,12 +38,12 @@ function calculate() {
   var funarpen = Math.floor(valorTotalEmolumentos * 0.06 * 100) / 100;
   var pmcmv = Math.floor(valorTotalEmolumentos * 0.02 * 100) / 100;
   
-  var distribuicao = 39.93;
+  var distribuicao = 42.28;
  
   var iss = valorTotalEmolumentos * 0.05;
   iss = Math.floor(iss * 100) / 100; // Trunca para 2 casas decimais
   
-  var selo = 2.77;
+  var selo = 2.87;
   var atoeletronico = 1.35;
 
   var emolumentos = valorTotalEmolumentos + fetj + funperj + funarpen + pmcmv + distribuicao + iss + selo + atoeletronico;
